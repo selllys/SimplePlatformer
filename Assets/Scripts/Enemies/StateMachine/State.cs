@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class State : MonoBehaviour
 {
-    [SerializeField] private List<Transition> _transitions;
+    private List<Transition> _transitions;
 
     protected Enemy Entity { get; private set; }
 
@@ -12,6 +12,7 @@ public abstract class State : MonoBehaviour
     {
         Entity = entity;
         gameObject.SetActive(false);
+        _transitions = GetComponents<Transition>().ToList();
 
         _transitions.ForEach(transition => transition.Init(entity));
     }
@@ -44,11 +45,5 @@ public abstract class State : MonoBehaviour
         }
 
         return null;
-    }
-
-    [ContextMenu("Update Transitions")]
-    private void UpdateTransitions()
-    {
-        _transitions = GetComponents<Transition>().ToList();
     }
 }

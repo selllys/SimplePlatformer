@@ -61,7 +61,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2268378445546275817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.32, y: -2.82, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 9173427107515219324}
@@ -279,11 +279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ad3e2e565dc354c94ff986f9b783ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitions:
-  - {fileID: 4445689763510723917}
-  - {fileID: 6166400536205740172}
-  - {fileID: 3655434721176270552}
-  - {fileID: 1520759307}
   _speed: 3
 --- !u!114 &4445689763510723917
 MonoBehaviour:
@@ -385,10 +380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2759c773017d1634dace2268aea48390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitions:
-  - {fileID: 7193120435991812794}
-  - {fileID: 8989722308067233443}
-  - {fileID: 141160037701758660}
   _damage: 1
   _cooldown: 2
 --- !u!114 &7193120435991812794
@@ -474,7 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68885afac090c5d4c80d0148296aeb41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitions: []
   _destroyDelay: 10
 --- !u!1 &6320381224955618532
 GameObject:
@@ -522,9 +512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74cbab60e6b435e4db63893e4de2a940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitions:
-  - {fileID: 429186070}
-  - {fileID: 429186071}
   _speed: 1
   _platformTurnChecker:
     Transform: {fileID: 661847792}
