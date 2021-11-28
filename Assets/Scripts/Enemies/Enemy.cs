@@ -5,7 +5,6 @@ using UnityEngine.Events;
 public class Enemy : MonoBehaviour
 {
     private static int _animatorHit = Animator.StringToHash("Hit");
-
     private Animator _animator;
     private Damagable _damagable;
     private Player _target;
