@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b6a9c4707385243a6d3174d7d3a539, type: 3}
+  m_Name: DefaultEnemiesFactory
+  m_EditorClassIdentifier: 
+  _prefabs:
+  - {fileID: 7563211251086310445, guid: 9961b04ac64f5004e8e55692e6cc2e73, type: 3}
+  _lootTable: {fileID: 11400000, guid: 8e22265bc222c0a47a38863dc52a962d, type: 2}
