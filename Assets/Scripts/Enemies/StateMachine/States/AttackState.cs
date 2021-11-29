@@ -27,10 +27,12 @@ public class AttackState : State
 
     private IEnumerator AttackRoutine()
     {
+        var attackDelay = new WaitForSeconds(_cooldown);
+
         while (true)
         {
             Attack(Entity.Target);
-            yield return new WaitForSeconds(_cooldown);
+            yield return attackDelay;
         }
     }
 

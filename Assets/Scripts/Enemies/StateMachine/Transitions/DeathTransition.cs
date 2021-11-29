@@ -2,15 +2,15 @@ public class DeathTransition : Transition
 {
     private void OnEnable()
     {
-        Entity.Died += OnDeath;
+        Entity.Died += OnEntityDied;
     }
 
     private void OnDisable()
     {
-        Entity.Died -= OnDeath;
+        Entity.Died -= OnEntityDied;
     }
 
-    private void OnDeath(Enemy entity)
+    private void OnEntityDied(Enemy entity)
     {
         NeedTransit = true;
     }

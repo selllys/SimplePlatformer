@@ -17,10 +17,10 @@ public class DeathState : State
         rigidBody.isKinematic = true;
         collider.enabled = false;
 
-        StartCoroutine(DestroyWithDelayRoutine());
+        StartCoroutine(DestroyWithDelay());
     }
 
-    private IEnumerator DestroyWithDelayRoutine()
+    private IEnumerator DestroyWithDelay()
     {
         yield return new WaitForSeconds(_destroyDelay);
         Destroy(Entity.gameObject);

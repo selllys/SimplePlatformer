@@ -17,7 +17,7 @@ public class PatrolState : State
 
     private void Update()
     {
-        if (CheckIsTurnNeeded())
+        if (IsTurnNeeded())
         {
             Entity.Turn();
         }
@@ -25,7 +25,7 @@ public class PatrolState : State
         Entity.MoveForward(_speed);
     }
 
-    private bool CheckIsTurnNeeded()
+    private bool IsTurnNeeded()
     {
         bool isGroundHit = CheckPlatformHit(Vector2.down);
         bool isWallHit = CheckPlatformHit(Entity.MoveDirection);

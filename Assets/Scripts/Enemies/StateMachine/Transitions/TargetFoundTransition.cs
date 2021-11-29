@@ -14,14 +14,14 @@ public class TargetFoundTransition : Transition
 
     private void DetectTarget()
     {
-        if (CheckIsTargetFound())
+        if (IsTargetFound())
         {
             Entity.SetTarget(GetTarget());
             NeedTransit = true;
         }
     }
 
-    private bool CheckIsTargetFound()
+    private bool IsTargetFound()
     {
         RaycastHit2D targetHit = GetHit(_targetLayers);
 
